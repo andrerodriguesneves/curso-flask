@@ -1,4 +1,4 @@
-#.........0...........1........2 
+#.........0...........1........2
 
 cores = ["vermelho", "verde", "azul"]
 numeros = [1, 2, 3]
@@ -26,8 +26,8 @@ print(nome, cpf, idade)
 pessoa = {
     "nome": "Andre",
     "cpf": "12345678912",
-    "idade": 18, 
-    "cores_preferidas": cores, 
+    "idade": 18,
+    "cores_preferidas": cores,
     "numero_preferidos": numeros
 }
 
@@ -38,12 +38,12 @@ print(f"Ola {pessoa['nome']} voce tem {pessoa['idade']} anos.")
 
 
 
-# iteração 
+# iteração
 print('########## iteração')
 
 for cor in cores:
     print(cor.upper())
-    
+
 print("Andre"[0]) # primeira Letra
 print("Andre"[-1]) # Ultima Letra
 
@@ -51,10 +51,9 @@ for letra in 'Andre':
     if letra == 'n':
         continue
     print(letra)
-    
-print('########## comprehension')
 
-# comprehension 
+print('########## comprehension')
+# comprehension
 print([letra for letra in 'Andre'])
 
 # comprehension filtrada
@@ -62,6 +61,6 @@ print([letra for letra in 'Andre' if letra != 'n'])
 
 for chave in pessoa:
     print(chave," : ", pessoa[chave])
-    
+
 for chave, valor in pessoa.items():
     print(chave," : ", valor)
